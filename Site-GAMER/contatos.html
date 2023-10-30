@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrpition" content="">
+    <meta name="keyword" content="games, xbox, playstation, play, play1 play2 . . . ">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+<body>
+    <div id="interface">
+        <header id="topo">
+            <img src="img/logo.png" alt="Logo controle de vídeo games">
+            <nav id="menu">
+                <ul>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+       <div id="banner-anime">
+       <img src="img/banner1.jpg" alt="Jogo God of War" id="anime1">
+       <img src="img/banner2.jpg" alt="Jogo God of War" id="anime2">
+    </div>
+    <h1>Entre em contato</h1>
+    <form id="contato">
+        <fieldset id="usuario">
+            <legend>Identificação de usuário</legend>
+            <p>
+                <label for="cNome">Usuário</label>
+                <input type="text" name="nome" id="cNome" maxlength="50" placeholder="Nome completo" required autofocus>
+            </p>
+
+            <p>
+                <label for="cMail">Email:</label>
+                <input type="email" name="mail" id="cMail" maxlength="50" placeholder="Seu E-mail" required>
+            </p>
+
+            <p>
+                <label for="cSenha">Senha:</label>
+                <input type="password" name="senha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos" required>
+            </p>
+
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="cMasc" checked>
+                    <label for="cMasc">Masculino</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="sexo" id="cFem">
+                    <label for="cFem">Feminino</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="sexo" id="cOutros">
+                    <label for="cOutros">Outros</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="CNasc">Data de nascimento:</label>
+                <input type="date" name="nasc" id="CNasc">
+            </p>
+            </fieldset>
+
+
+        <fieldset id="endereço">
+        <p>
+            <legend>Endereço de usuário</legend>
+            <input type="text" name="rua" id="cRua" size="50" maxlength="50" placeholder="av., Rua, Trv.">
+        </p>
+
+        <p>
+            <label for="cNum">Número:</label>
+            <input type="number" name="num" id="cNum" min="0" max="99999">
+        </p>
+
+        <p>
+            <label for="cEst">Estado:</label>
+            <select name="est" id="cEst">
+                <optgrup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgrup>
+
+                <optgrup label="Região Sul">
+                    <option value="SC" selected>Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgrup>
+            </select>
+        </p>
+
+        <p>
+            <label for="cCid">Cidade:</label>
+            <input type="text" name="cid" id="cCid" size="40" maxlength="40" placeholder="Sua cidade">
+        </p>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <legend>Mensagem</legend>
+
+            <label for="cUrg"> Grau de urgência</label>
+            Mín <input type="range" name="urg" id="cUrg" min="0" max="10" step="1"> Máx
+
+            <p><label for="cMsg">Mensagem</label></p>
+            <p>
+                <textarea name="msg" id="cMsg" cols="70" rows="7" placeholder="Sua mensagem. . ."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset id="pedido">
+            <legend>Quero um console</legend>
+            <p>
+                <input type="checkbox" name="ped" id="cPed" checked>
+                <label for="cPed">Gostaria de adquirir um console quando disponível</label>
+            </p>
+
+            <p>
+                <label for="cCons">Consoles:</label>
+                <select name="game" id="cCons">
+                    <option value="PS">Playstation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="cCor">Cor:</label>
+                <input type="color" name="cor" id="cCor" value="#600101">
+            </p>
+
+            <p>
+                <label for="cQtde">Qtde</label>
+                <input type="number" name="qtde" id="cQtde" min="0" max="5" value="0">
+            </p>
+
+            <p>
+                <label for="cTot">Preço total: R$</label>
+                <input type="text" name="tot" id="cTot" placeholder="Total a pagar" readonly>
+            </p>
+        </fieldset>
+
+        <div id="botao">
+            <button type="submit" name="enviar" class="btn">Enviar</button>
+            <button type="reset" name="limpar" class="btn">Limpar</button>
+        </div>
+    </form>
+
+    <footer id="rodape">
+        <p>Somente para fins esducativos.</p>
+        <p>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="img/logo-face.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/logo-instagram.png" alt=""></a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank"><img src="img/logo-twitter.png" alt=""></a>
+        </p>
+    </footer>
+</body>
+</html>
