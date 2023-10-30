@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+}
+
+#container{
+    text-align: center;
+}
+
+span{
+    color: #eb394e;
+}
+
+.caixa{
+    width: 80px;
+}
