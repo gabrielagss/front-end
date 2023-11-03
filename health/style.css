@@ -1,18 +1,32 @@
 body{
     font-family: sans-serif;
+    background: #c2f5f1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#titulo{
+    background: #e5e6e5;
+    color: #0f8d82;
 }
 
 #man{
-    text-align: center;
+    text-align:center;
 }
 
 .Caixa{
-    width: 200px;
+    font-size: 1.0em;
+    width: 190px;
+    color: #0f8d82;
+    margin: 5px;
+    border-radius: 7px;
 }
 
 
 input::placeholder{
-    color:brown
+    color:#0f8d82
 }
 input[type=number] ::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -20,4 +34,39 @@ input[type=number] ::-webkit-inner-spin-button {
 input[type=number] {
     -moz-apperance: textfield;
     appearance: texfield;
+}
+.btn{
+    left: 10px;
+    margin: 5px;
+    position: relative;
+    width: 100px;
+    background: #e5e6e5;
+    color: #0f8d82;
+    padding: 5px;
+    font-size: 1.0em;
+    border-radius: 7px;
+}
+
+.lim{
+    left: 5px;
+    margin: 5px;
+    position: relative;
+    width: 100px;
+    background: #e5e6e5;
+    color: #c54d4d;
+    padding: 5px;
+    font-size: 1.0em;
+    border-radius: 7px;
+}
+
+#atividade{
+    margin: 5px;
+    position:relative;
+    width: 275px;
+    font-size: 1.0em;
+    border-radius: 7px;
+}
+#sexo{
+    margin: 10px;
+    font-size: 1.0em
 }
