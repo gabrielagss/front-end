@@ -11,20 +11,24 @@
 
 <body>
     <div id="man">
-        <h1>APP - HEALTH</h1>
+        <h1 id="titulo">APP - HEALTH</h1>
         <form name="frmIMC">
             <input type="number" name="txtIdade" placeholder="Idade" class="Caixa">
-            <input type="number" name="txtPeso" placeholder="Peso">
+            <input type="number" name="txtPeso" placeholder="Peso" class="Caixa">
             <input type="number" name="txtAltura" placeholder="Altura" class="Caixa">
             <p>
+                <div id="sexo">
                 Sexo:
                 <input type="radio" name="grupo" id="m">Masculino
                 <input type="radio" name="grupo" id="f">Feminino
+            </div>
             </p>
 
             <p>
                 <select name="nivel" id="atividade">
-                    <option value="" selected><nav>Selecione o nível de atividade física</nav></option>
+                    <option value="" selected>
+                        <nav>Selecione o nível de atividade física</nav>
+                    </option>
                     <option value="1.2">Sedentário (Trabalho de escritorio)</option>
                     <option value="1.375">Exercícios (1 - 2 dias por semana)</option>
                     <option value="1.55">Exercícios (3 - 5 dias por semana)</option>
@@ -33,9 +37,10 @@
                     <option value="1.9">Atleta (2x por dia)</option>
                 </select>
             </p>
-
-            <input type="button" value="Calcular" onclick="calcular()">
-            <input type="reset" value="Limpar" onclick="limpar()">
+            <div id="botao">
+                <input type="button" value="Calcular" class="btn" onclick="calcular()">
+                <input type="reset" value="Limpar"class="lim" onclick="limpar()">
+            </div>
         </form>
         <img src="img/reset.png" alt="Marcador IMC" id="grafico">
         <h3 id="imc"></h3>
