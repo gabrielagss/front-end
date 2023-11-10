@@ -1,0 +1,430 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+
+/*Fontes:
+Título: Quicksand
+Texto: Josefin Sans
+
+/*Variaveis*/
+/*para cirar class utilizar -- */
+:root {
+    --cor1: #f2f0f0;
+    --cor2: #a9a9a9;
+    --cor3: #343538;
+    --cor4: #173261;
+
+    --fonte-titulo: 'Quicksand', sans-serif;
+    --fonte-texto: 'Josefin Snas', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.botao {
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 1em;
+    font-weight: 700;
+    background: var(--cor4);
+    padding: 8px 20px;
+    border: 2px solid var(--cor1);
+    border-radius: 25px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background: #456992;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.flex3 {
+    display: flex;
+    align-items: center;
+}
+.flex4{
+    display: flex;
+    flex-wrap: wrap; /* quebrar linha quando tiver todo mundo junto*/
+    justify-content: space-evenly
+}
+.card{
+    margin-top: 20px;
+    width: 338px;
+    height: 595px;
+    background: var(--cor2);
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+}
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+.card h3{
+    margin-top: 15px;
+}
+.card p{
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    color: var(--cor4);
+}
+.card a{
+    padding: 10px 100px;
+    border: 0;
+}
+
+/*Smartphone Portatil*/
+header {
+    height: 60px;
+}
+
+.logo img {
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.048);
+}
+
+nav ul {
+    list-style: none;
+    background: var(--cor2);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.55s;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cor3);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+main {
+    height: 75vh;
+    background: url(img/banner_front.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1.1em;
+    margin: 20px 0px 50px 0px;
+}
+
+/*Sobre*/
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destaque_sobre {
+    display: none;
+}
+
+.texto_sobre {
+    color: var(--cor1);
+    padding: 0px 10px;
+}
+
+.texto_sobre h2 {
+    margin-bottom: 10px;
+}
+
+.topico_sobre {
+    margin-top: 20px
+}
+
+.topico_sobre img {
+    margin-right: 10px;
+}
+
+/* One Page*/
+.video iframe {
+    width: 40px;
+    height: 191px;
+}
+
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+/*wirefrane*/
+#wireframe {
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto_wire {
+    color: var(--cor1);
+    padding: 0px 10px;
+}
+
+.texto_wire h2 {
+    margin-bottom: 10px;
+}
+
+.texto_wire p {
+    margin-bottom: 40px;
+}
+
+.texto_wire span {
+    display: none;
+}
+
+.qrcode {
+    display: none;
+}
+
+/*Cartões de conteudo*/
+#conteudo {
+    padding: 50px 0px;
+}
+#conteudo h2{
+    padding-bottom: 25px;
+    text-align: center;
+}
+/*rodape*/
+address{
+    padding: 35px 10px 50px 10px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+}
+address a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+address img{
+    padding-top: 15px;
+}
+.icone_local{
+    display: none; /*escoder icones no cel*/
+}
+.dados{
+    margin: 30px 0px 15px 0px;
+}
+.google_maps{
+    display: none;
+}
+footer{
+    padding: 50px;
+    background: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+.social{
+    margin-bottom: 25px;
+}
+
+/*Smartphone Landscape*/
+@media (min-width: 576px) {
+
+    /* body{
+        background: #d1d3d1;
+    }
+    /*layout*/
+    .container {
+        max-width: 540px;
+    }
+
+    main h1,
+    main h2 {
+        text-shadow: #0000008e 0.5em 0.5em 0.5em;
+    }
+
+
+    .logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    /* One Page*/
+    .video iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+/*Tablet Portatil*/
+@media (min-width: 768px) {
+
+    /*body{
+        background: #d1d3d1;
+    }
+     /*layout*/
+    .container {
+        max-width: 720px;
+    }
+
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 5.5em;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+}
+
+/*Tablet Landscape*/
+@media (min-width: 992px) {
+
+    /*body{
+        background: #d1d3d1;
+    }
+     /*layout*/
+    .container {
+        max-width: 960px;
+    }
+
+    main {
+        height: 70vh;
+    }
+}
+
+/*PC*/
+@media (min-width:1200px) {
+
+    /*body{
+        background: #bbbbbb;
+    }
+     /*layout*/
+    .container {
+        max-width: 1140px;
+    }
+
+    header {
+        height: 125px;
+    }
+
+    .logo {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: var(--cor4)
+    }
+
+    /*sobre*/
+    .destaque_sobre {
+        display: inline;
+    }
+
+    .destaque_sobre img {
+        border-radius: 50px;
+        margin-right: 50px;
+    }
+
+    #sobre {
+        background-attachment: fixed;
+    }
+
+    /*One Page*/
+    .flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*wireframe*/
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+
+    .qrcode {
+        display: inline;
+    }
+}
