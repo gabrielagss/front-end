@@ -23,7 +23,9 @@ Texto: Josefin Sans
     padding: 0;
     border: 0;
 }
-
+html{
+    scroll-behavior: smooth;/*subda suavi*/
+}
 body {
     font-family: var(--fonte-texto);
     font-size: 1.2em;
@@ -73,6 +75,10 @@ body {
 .flex5{
     display: flex;
     flex-direction: column-reverse;
+}
+.flex6{
+    display: flex;
+    justify-content: space-around;
 }
 .card{
     margin-top: 20px;
@@ -314,6 +320,11 @@ footer{
         width: 560px;
         height: 315px;
     }
+    .flex5{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /*Tablet Portatil*/
@@ -430,5 +441,18 @@ footer{
 
     .qrcode {
         display: inline;
+    }
+    /*rodapé*/
+    .icone_local{
+        display: inline;
+    }
+    .icone_mapa{
+        display: none;
+    }
+    .google-maps{
+        display: inline;
+    }
+    .flex6{
+        flex-direction: row-reverse;
     }
 }
