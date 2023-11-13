@@ -1,0 +1,24 @@
+/*deixar sem bordas*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{ /*centralizar o conteúdo na tela do dispositivo*/
+    max-width: 1080px;
+    margin: 0 auto;
+}
+/*deixar todas as imagens responsivas*/
+img{
+max-width: 100%;
+}
+
+/* Efeito fade (esmaecimento, desaparecimento) */
+#slide{
+     opacity: 1; /*100% visivel (0 a 1) */
+    transition: opacity 2s;
+}
+
+#slide.FadeOut{ /*= deixa invisivel*/
+    opacity: 0 /*invisivel (0 a 1)*/
+}
+/*vetor*/
