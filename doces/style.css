@@ -1,9 +1,9 @@
 @charset "UTF-8";
-
 :root {
-    --cor1: #f8f6e1;
-    --cor2: #f8cfcd;
-    --cor3: #675446;
+    --cor1: #fdf8e5;
+    --cor2: #f8ccbf;
+    --cor3: #422d29;
+    --cor4: #ffffff;
 }
 
 * {
@@ -11,119 +11,99 @@
     padding: 0;
     border: 0;
 }
-
-html {
+html{
     scroll-behavior: smooth;
 }
-
 body {
     font-size: 1.2em;
+   background: var(--cor1);
 }
-
-.container {
+.container{
     margin: 0 auto;
 }
-
-iframe {
+iframe{
     width: 100%;
 }
-
-.logo img {
-    width: 110px;
+.logo{
+    background: var(--cor4);
+    box-shadow: 0px 4px 0px rgba(103, 102, 102, 0.12);
+    border-radius: 0 0 50% 50%;
+    max-height: 90px;
+    left: 0;
+    right: 0;
+    top: 0%;
+    padding: 14px 10px;
+    margin: auto;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+.logo img{
+    width: 80px;
+    max-height: 70px;
     left: 0;
     right: 0;
     top: 0%;
     margin: auto;
-    position: absolute;
+    position: absolute;;
 }
-
-.flex {
+.botao{
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 1em;
+    font-weight: 700;
+    background: var(--cor2);
+    padding: 8px 20px;
+    border: 2px solid var(--cor3);
+    border-radius: 25px;
+}
+.flex{
     display: flex;
     justify-content: space-between;
+    background: var(--cor2);
+    height: 60px;
+   
 }
-
-/* flex1 {
+.flex1{
     display: flex;
     align-items: center;
-} */
-
-.flex4 {
+}
+/*cards rosas*/
+.flex2{
     display: flex;
     flex-wrap: wrap;
-    /* quebrar linha quando tiver todo mundo junto*/
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
-
-.flex5 {
+.flex3{
     display: flex;
     flex-direction: column-reverse;
 }
-
-/* Diferentes Telas */
-/* Smartphone Portait */
-/* NavBar */
-header {
-    height: 100px;
+.card{
+    margin-top: 20px;
+    width: 338px;
+    height: 595;
     background: var(--cor2);
+    color: var(--cor3);
+    border: 2px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
 }
-
-#check {
-    display: none;
+.card h3{
+    margin-top: 12px;
 }
-
-label {
-    font-size: 3em;
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    color: rgba(0, 0, 0, 0.488);
-}
-
-nav ul {
-    list-style: none;
-    background-color: var(--cor1);
-    height: 100vh;
-    position: fixed;
-    top: 100px;
-    right: -100%;
-    width: 100%;
-    transition: all 0.55s;
-}
-
-#check:checked~ul {
-    right: 0;
-
-}
-
-nav ul li {
-    padding: 20px;
-    border-bottom: 1px solid var(--cor3);
-}
-
-nav ul li a {
-    text-decoration: none;
+.card p{
+    text-align: left;
+    padding: 10px 20px 30px 20px;
     color: var(--cor3);
 }
-
-.logo {
-    background: #f5f5f2;
-    box-shadow: 0px 4px 0px rgba(103, 102, 102, 0.12);
-    border-radius: 0 0 50% 50%;
-    max-height: 60px;
-    left: 0;
-    right: 0;
-    top: 0%;
-    padding: 50px 20px;
-    margin: auto;
-    position: absolute;
-    width: 120px;
-    height: 25px;
+.card a{
+    padding: 10px 100px;
+    border: 0;
 }
-
-/* Banner */
-main {
-    height: 50vh;
-    background: url(img/fatia_bolo.jpg);
+/*card rosas*/
+main{
+    height: 70vh;
+    background: url(img/fatia_bolo.jpeg);
     background-size: cover;
     background-position: center;
     color: var(--cor1);
@@ -132,220 +112,140 @@ main {
     justify-content: center;
     text-align: center;
 }
-
-main h1 {
+main h1{
     font-size: 2.5em;
 }
-
-main h2 {
+main h2{
     font-size: 1.1em;
+    margin: 20px 0px 50px 0px;
 }
-
-.button {
-    text-decoration: none;
-    width: 100px;
+/*SMARTPHONE PORTATIL*/
+header{
+    height: 60px;
+}
+#check{
+    display: none;
+}
+label{
+    font-size: 3em;
+    position: absolute;
+    top: 5px;
+    right: 15px;
     color: var(--cor3);
-    font-size: 1em;
-    font-weight: 700;
-    background: var(--cor1);
-    padding: 8px 20px;
-    border: 2px solid var(--cor3);
-    border-radius: 25px;
-    /* flexbox para centralizar */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
 }
-
-
-
-/* Imagem e texto */
-
-#texto {
-    padding: 0px 5px;
-}
-
-.imagem_texto {
-    display: inline;
-    margin: 0 auto;
-}
-
-.imagem_texto img {
-    border-radius: 50px;
-    max-width: 90%;
-    margin: 20px;
-}
-
-.texto_info {
-    margin: 0px 30px 30px 30px;
-    color: var(--cor3);
-    border-radius: 10px;
-}
-/* Sobre */
-
-.card {
-
-    margin-top: 20px;
-    width: 338px;
-    height: 370px;
-    background: var(--cor2);
-    border: 1px solid var(--cor3);
-    border-radius: 25px;
-    text-align: center;
-}
-
-.card h3 {
-    margin-top: 15px;
-    font-size: 1.6em;
-}
-
-.card p {
-    text-align: left;
-    padding: 10px 30px 50px 30px;
-    color: var(--cor4);
-}
-
-.card a {
-    padding: 10px 100px;
-    border: 0;
-}
-
-
-#conteudo {
-    padding: 50px 0px;
-}
-
-
-#conteudo h2 {
-    font-size: 2em;
-    padding-bottom: 0;
-    text-align: center;
-}
-
-/* Rodapé */
-footer {
-    padding: 50px;
+nav ul {
+    list-style: none;
     background: var(--cor3);
-    color: var(--cor1);
-    text-align: center;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.55s;
 }
 
-.horarios h3 {
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cor2);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+/*QUEM SOMOS / BOLINHOS*/
+
+.img_quem img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+/*RODAPE*/
+footer{
+    padding: 30px;
+    background: var(--cor2);
+    color: var(--cor3);
+    text-align: center;
+}
+.horarios h3{
     font-size: 1.5em;
     margin-bottom: 10px;
 }
-
-.horarios ul {
+.horarios ul{
     list-style: none;
 }
-
-.logo_rodape {
-    margin-top: 30px;
+.logo_rodape{
+    margin-top: 40px;
 }
-
-.logo_rodape img {
+.logo_rodape img{
     height: 150px;
-
 }
-
-.social {
+.social{
     margin-top: 25px;
 }
-
-.social img {
+.social img{
     height: 50px;
-    margin: 0 px;
+    margin: 0px;
 }
 
-
-
-
-
-/* Smartphone Landscape */
-@media (min-width: 576px) {
-    .container {
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px){
+    .container{
         max-width: 540px;
     }
-
-    .logo_nav img {
-        width: 189px;
-        height: 189px;
-        margin: 30px;
-        margin-left: 30px;
-    }
 }
-
-/* Tablet Portatil */
+/*TABLET PORTATIL*/
 @media (min-width: 768px) {
-    .container {
+    .container{
         max-width: 720px;
     }
 }
-
-/* Tablet LandScape */
-@media (min-width: 992px) {
-    .container {
+/*TABLET LANDSCAPE*/
+@media (min-width: 960px){
+    .container{
         max-width: 960px;
     }
 }
-
-/* PC */
-@media (min-width: 1200px) {
-    .container {
+/*PC*/
+@media (min-width: 1200px){
+    .container{
         max-width: 1140px;
     }
-    
-    header {
+    header{
         height: 125px;
     }
-
-    .logo {
+    /*logo e nomezinhos*/
+    .logo{
         width: 100px;
-        height: 40px;
+        height: 60px;
         margin-top: 0px;
-        margin-left: 700px;
+        margin-left: 600px;
     }
-
-    label {
+    label{
         display: none;
     }
-
-    nav ul {
+    nav ul{
         position: static;
         height: auto;
-        margin-top: 50px;
+        margin-top: 0px;
     }
-
-    nav ul li {
+    nav ul li{
         float: left;
         border: 0;
     }
-
-    nav ul li a {
-        color: var(--cor4)
+    nav ul li a{
+        color: var(--cor3);
     }
-
-    /*sobre*/
-    .destaque_sobre {
-        display: inline;
-    }
-
-   .imagem_texto img{
-    height: 300px;
-   }
-   .texto_info{
-    margin: 10px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   }
-   .menu2{
-    margin: 10px 10px 10px 800px;
-    text-align: center;
-   }
-   .menu{
-    margin: 0px 0px 0px 20px;
-   }
+    .menu2{
+        margin: 0px 0px 0px 500px;
+        text-align: center;
+       }
+       .menu{
+        margin: 0px 0px 0px 200px;
+       } 
 }
