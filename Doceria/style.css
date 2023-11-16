@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #fdf8e5;
+    --cor2: #f8ccbf;
+    --cor3: #422d29;
+    --cor4: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.2em;
+    background: var(--cor1);
+}
+
+iframe {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+#topo {
+    position: fixed;
+    right: 10px;
+}
+main {
+    height: 100vh;
+    background: url(img/fatia_bolo.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1 {
+    font-size: 1.5em;
+}
+
+main p {
+    font-size: 1.1em;
+    margin: 20px 0px 50px 0px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background: var(--cor);
+    height: 60px;
+}
+
+.flex1 {
+    display: flex;
+    align-items: center;
+}
+
+/*cards rosas*/
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex4{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+.flex5{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+.flex6{
+   display: none;
+    justify-content: space-around;
+    margin: 50px;
+}
+.card {
+    margin-top: 20px;
+    width: 338px;
+    height: 595;
+    background: var(--cor2);
+    color: var(--cor3);
+    border: 2px solid var(--cor3);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 12px;
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 20px 30px 20px;
+    color: var(--cor3);
+}
+
+.card a {
+    padding: 10px 100px;
+    border: 0;
+}
+
+/*card rosas*/
+
+/*contatos*/
+.cont{
+    margin-top: 20px;
+    width: 300px;
+    height: 55;
+    background: var(--cor2);
+    color: var(--cor3);
+    border: 2px solid var(--cor3);
+    border-radius: 15px;
+    text-align: center;
+}
+ h2{
+    text-align: center;
+    color: var(--cor3);
+    margin: 0px 50px 20px;
+}
+.cont h3 {
+    margin-top: 12px;
+}
+
+.cont p {
+    text-align: left;
+    padding: 10px 20px 30px 20px;
+    color: var(--cor3);
+    text-align: center;
+}
+
+.cont img {
+    height: 50px;
+}
+/*primeira fila de doces*/
+.doc{
+    margin-top: 20px;
+    width: 210px;
+    height: 210px;
+    padding: 10px;
+    background: var(--cor3);
+    border: 3px solid var(--cor2);
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px 0px 0px 120px;
+}
+.doc img{
+    height: 200px;
+    border-radius: 15px;
+    margin: center;
+}
+/*segundo fila de doces*/
+.dos{
+    float: left;
+    width: 210px;
+    height: 210px;
+    padding: 10px;
+    background: var(--cor3);
+    border: 3px solid var(--cor2);
+    border-radius: 25px;
+    text-align: center;
+    margin: 0px 0px 0px 190px;
+}
+.dos img{
+    height: 200px;
+    border-radius: 15px;
+    margin: center;
+}
+/*SMARTPHONE PORTATIL*/
+header {
+    height: 60px;
+    background: var(--cor2);
+}
+
+.logo img {
+    width: 80px;
+    max-height: 70px;
+    left: 0;
+    right: 0;
+    top: 0%;
+    margin: auto;
+    position: absolute;
+}
+
+.logo {
+    background: var(--cor4);
+    border-radius: 0 0 50% 50%;
+    height: 50px;
+    left: 0;
+    right: 50;
+    padding: 14px 10px;
+    margin: 0px 50px;
+    position: absolute;
+    width: 70px;
+    height: 50px;
+}
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: var(--cor3);
+}
+
+nav ul {
+    list-style: none;
+    background: var(--cor3);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.55s;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cor2);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+.fotos img {
+    width: 200px;
+    height: 200px;
+}
+
+/*fotos*/
+#galeria {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+
+#galeria-fotos {
+    list-style: none;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+
+#album-fotos {
+    width: 696px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+
+#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid var(--cor3);
+    background: #fff;
+}
+
+#galeria h1 {
+    color: var(--cor3);
+    text-align: center;
+}
+.imagem_texto img {
+    border-radius: 20px;
+    width: 90%;
+    margin: 50px;
+    height: 250px;
+    width: 250px;
+}
+.texto_info {
+    margin: 20px 30px 30px 30px;
+    color: var(--cor3);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.texto_info p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: var(--cor3);
+}
+
+/*QUEM SOMOS / BOLINHOS*/
+
+
+/*cards*/
+#conteudo {
+    padding: 50px 0px
+}
+
+#conteudo h2 {
+    font-size: 1.6em;
+    padding-bottom: 0;
+    text-align: center;
+    color: var(--cor3);
+}
+
+/*cards*/
+
+/*RODAPE*/
+footer {
+    padding: 30px;
+    background: var(--cor2);
+    color: var(--cor3);
+    text-align: center;
+}
+
+.horarios h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.horarios ul {
+    list-style: none;
+}
+
+.logo_rodape {
+    margin-top: 40px;
+}
+
+.logo_rodape img {
+    height: 150px;
+}
+
+.social {
+    margin-top: 25px;
+}
+
+.social img {
+    height: 50px;
+    margin: 0px;
+}
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    main h1,
+    main h2 {
+        text-shadow: var(--cor3)
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+}
+
+/*TABLET PORTATIL*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    main {
+        height: 45vh;
+    }
+    main h1 {
+        font-size: 5.5em;
+    }
+    main h2 {
+        font-size: 2em;
+    }
+    .logo img {
+        width: 100px;
+        height: 200px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .logo {
+        background: var(--cor4);
+        border-radius: 0 0 50% 50%;
+        height: 10px;
+        left: 0;
+        right: 50;
+        padding: 14px 10px;
+        margin: 0px 50px;
+        position: absolute;
+        width: 100px;
+        height: 50px;
+    }
+}
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+    main {
+        height: 70vh;
+    }
+}
+
+/*PC*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    header {
+        height: 125px;
+        background: var(--cor2);
+    }
+    /*logo e nomezinhos*/
+    .logo {
+        width: 100px;
+        height: 60px;
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: var(--cor3);
+    }
+    .menu {
+        margin: 0px 0px 0px 200px;
+    }
+    .menu2 {
+        margin: 0px 0px 0px 500px;
+        text-align: center;
+    }
+}
